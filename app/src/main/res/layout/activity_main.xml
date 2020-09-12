@@ -10,25 +10,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:padding="10dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:fontFamily="@font/roboto_bold"
-            android:gravity="center_horizontal"
-            android:text="Пожертвования"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_horizontal"
+                android:text="Пожертвования"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#c0c0c0"/>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:layout_centerInParent="true"
-            android:text="Создать сбор"
-            android:onClick="onCreateFundClick"/>
+            android:onClick="onCreateFundClick"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:text="Создать сбор" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

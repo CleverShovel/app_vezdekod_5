@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCreateFundClick(View v) {
-        Intent questionIntent = new Intent(MainActivity.this,
+        Intent intent = new Intent(MainActivity.this,
                 ChooseFundingType.class);
-        startActivity(questionIntent);
+        startActivity(intent);
     }
 }
